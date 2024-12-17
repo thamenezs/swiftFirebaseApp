@@ -11,11 +11,29 @@ final class SignInEmailViewModel: ObservableObject {
     @Published var email = ""
     @Published var password = ""
     
+    func signIn() {
+        guard !email.isEmpty, !password.isEmpty else {
+            print("No email or passowrd found")
+            return
+        }
+        
+        Task {
+            do {
+                let returnedUserData = try await AuthenticationManager.shared.createUser(email: email, passoword: password)
+                print("Success")
+                print(returnedUserData)
+            } catch {
+                print("error: \(error)")
+            }
+        }
+    }
 }
 
 struct SignInEmailView: View {
     
     @StateObject private var viewModel = SignInEmailViewModel()
+    
+
     
     var body: some View {
         NavigationStack {
@@ -31,7 +49,7 @@ struct SignInEmailView: View {
                     .cornerRadius(10)
                 
                 Button {
-                    
+                    viewModel.signIn()
                 } label: {
                     Text("Sign In")
                         .font(.headline)

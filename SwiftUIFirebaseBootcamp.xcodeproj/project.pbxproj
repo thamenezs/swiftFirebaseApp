@@ -17,6 +17,8 @@
 		D6723E272D12239100FE4D18 /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6723E262D12239100FE4D18 /* AuthenticationView.swift */; };
 		D6723E292D12249900FE4D18 /* SignInEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6723E282D12249900FE4D18 /* SignInEmailView.swift */; };
 		D6723E2B2D12267C00FE4D18 /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6723E2A2D12267C00FE4D18 /* AuthenticationManager.swift */; };
+		D6723E2D2D12389700FE4D18 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6723E2C2D12389700FE4D18 /* RootView.swift */; };
+		D6723E2F2D123B8700FE4D18 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6723E2E2D123B8700FE4D18 /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,8 @@
 		D6723E262D12239100FE4D18 /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
 		D6723E282D12249900FE4D18 /* SignInEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInEmailView.swift; sourceTree = "<group>"; };
 		D6723E2A2D12267C00FE4D18 /* AuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
+		D6723E2C2D12389700FE4D18 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		D6723E2E2D123B8700FE4D18 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +97,8 @@
 			isa = PBXGroup;
 			children = (
 				D6723E262D12239100FE4D18 /* AuthenticationView.swift */,
+				D6723E2C2D12389700FE4D18 /* RootView.swift */,
+				D6723E2E2D123B8700FE4D18 /* SettingsView.swift */,
 				D6723E2A2D12267C00FE4D18 /* AuthenticationManager.swift */,
 				D6723E282D12249900FE4D18 /* SignInEmailView.swift */,
 			);
@@ -177,8 +183,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6723E2F2D123B8700FE4D18 /* SettingsView.swift in Sources */,
 				D6723E122D12132F00FE4D18 /* ContentView.swift in Sources */,
 				D6723E102D12132F00FE4D18 /* SwiftUIFirebaseBootcampApp.swift in Sources */,
+				D6723E2D2D12389700FE4D18 /* RootView.swift in Sources */,
 				D6723E272D12239100FE4D18 /* AuthenticationView.swift in Sources */,
 				D6723E2B2D12267C00FE4D18 /* AuthenticationManager.swift in Sources */,
 				D6723E292D12249900FE4D18 /* SignInEmailView.swift in Sources */,
